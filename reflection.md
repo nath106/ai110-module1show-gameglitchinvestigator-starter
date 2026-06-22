@@ -56,6 +56,8 @@ To verify if a bug was fixed, I would do a manual test to ensure that all the ch
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+Streamlit is a framework that can create a UI quickly through lines of Python code. Streamlit "reruns" refer to the re-execution of the entire Python script when intereacting with a Streamlit app. When a "rerun" occurs, normal Python variables rest to zero every time. To avoid the reset of certain variables, a session state can be used.
+
 
 
 ---
@@ -64,5 +66,13 @@ To verify if a bug was fixed, I would do a manual test to ensure that all the ch
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+  One habit that I will reuse in future labs is getting the AI to explain what certain things do. Getting it to explain parts of the code and how certai changes improve the quality of the code will help me understand the system better.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+I would probably try to use multiple AI agents for different things to optimize the amount of tokens I have. For example, I would use Claude for mostly Claude Code to save my tokens. If I need to get a deeper explanation on what parts of the code do or need a lighter task done, I would ask another agent.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+AI generated code is a powerful tool that can improve work ethic, but also harm it. It is up to the user to work with AI to complete projects and goals efficiently, but not to soley rely on it. As it is shown in the AI generate game, there were still many bugs in a simple game. If there was a human working along side the AI agent to manage what was being created, these bougs could have been avoided.

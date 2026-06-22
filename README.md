@@ -25,19 +25,28 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
+- [ ] Game's Purpose: Game Glitch Investigator is a number guessing game using Streamlit.
+- [ ] Bugs Found: 
+   - Reversed hint messages.
+   - Wrong amount of guess.
+   - Difficulty number range not followed.
+   - New game button doesn't work.
+   - Score and History reset every new game.
 - [ ] Explain what fixes you applied.
+   - The hint messages were not with their correct outcomes message causing the "Go Higher" or "Go Lower" hints to be swapped.
+   - Guess counter was fixed by chaning the initial attempts from 0 to 1.
+   - "New game" was hardcoded to randint(1, 100); it now uses low and high from the selected difficulty
+   - The handler was missing status= "playing", so after finishing a game the game-over block would catch every subsequent rerun and call st.stop() before the submit logic could run. 
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 50
+2. Game returns "Too Low", hints "Go Higher"
+3. User entera a guess of 75 --> "Too Low, Go Higher"
+4. Score updates correctly after each guess
+5. Game ends after the correct guess
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
