@@ -39,18 +39,6 @@ if "secret" not in st.session_state or st.session_state.get("difficulty") != dif
 
 st.session_state.difficulty = difficulty
 
-if "attempts" not in st.session_state:
-    st.session_state.attempts = 0
-
-if "score" not in st.session_state:
-    st.session_state.score = 0
-
-if "status" not in st.session_state:
-    st.session_state.status = "playing"
-
-if "history" not in st.session_state:
-    st.session_state.history = []
-
 st.subheader("Make a guess")
 
 #FIX: Updated the logic to correctly display the number of attempts left. Also added the correct range for the selected difficulty level.
@@ -97,14 +85,13 @@ if st.session_state.status != "playing":
     st.stop()
 
 if submit:
-    st.session_state.attempts += 1
-
-    ok, guess_int, err = parse_guess(raw_guess)
+    ok, guess_int, err = parse_guess(raw_guess, low, high)
 
     if not ok:
         st.session_state.history.append(raw_guess)
         st.error(err)
     else:
+        st.session_state.attempts += 1
         st.session_state.history.append(guess_int)
 
         outcome, message = check_guess(guess_int, st.session_state.secret)
