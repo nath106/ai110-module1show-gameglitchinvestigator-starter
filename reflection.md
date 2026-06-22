@@ -36,6 +36,8 @@ A bug that AI found was that the original code that the hints "Go HIGHER!" and "
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
 
+
+
 ---
 
 ## 3. Debugging and testing your fixes

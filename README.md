@@ -46,7 +46,7 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 2. Game returns "Too Low", hints "Go Higher"
 3. User entera a guess of 75 --> "Too Low, Go Higher"
 4. Score updates correctly after each guess
-5. Game ends after the correct guess
+5. Game ends after the number is guessed correctly or all attemps are used.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
