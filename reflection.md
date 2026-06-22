@@ -35,7 +35,7 @@ A bug that AI found was that the original code that the hints "Go HIGHER!" and "
 
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
-
+One bug example AI suggested was the design of the hard level. It suggested that the "Hard" difficulty was easier than "Normal" difficulty. I chose not to go forward with the changes it suggested to stay true to the orignal game. I didn't see that as a bug, but more of a design choice.
 
 
 ---
